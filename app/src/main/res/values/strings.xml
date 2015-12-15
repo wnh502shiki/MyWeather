@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">我的天气</string>
+    <string name="none_location">未设置地区</string>
+    <string name="none_data">无数据</string>
+    <string name="editCityName">请输入城市名称：</string>
+    <string name="main_text">默认</string>
+    <string name="left"><![CDATA[<]]></string>
+    <string name="right"><![CDATA[>]]></string>
+    <string name="delete">删除</string>
+    <string name="addCity">增加</string>
+    <string name="deleteCity">删除</string>
+    <string name="setMain">设为默认城市</string>
+</resources>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/city_info_pad"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/none_data"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/moon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+
+            android:text="@string/none_data"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/none_data"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/none_location"
+            android:textSize="70sp" />
+
+        <TextView
+            android:id="@+id/main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/location"
+            android:layout_below="@+id/location"
+            android:text="@string/main_text"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/img_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/location"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/none"
+            android:paddingTop="3dp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/weather_info_pad"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_above="@+id/button_control_pad"
+        android:padding="5dp">
+
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/none_data"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info"
+            android:layout_centerHorizontal="true"
+            android:text="@string/none_data"
+            android:textSize="40sp"
+            android:padding="5dp"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/img"
+                android:text="@string/none_data"
+                android:textSize="25sp"
+                android:paddingBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/humidity"
+                android:layout_alignParentBottom="true"
+                android:text="@string/none_data"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/direct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/power"
+                android:text="@string/none_data"
+                android:textSize="25sp"
+                android:paddingBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/none_data"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/button_control_pad"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/left"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#ffff"
+            android:text="@string/left"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/left"
+            android:layout_alignParentEnd="true"
+            android:background="#ffff"
+            android:text="@string/right"
+            android:textSize="40sp" />
+
+    </RelativeLayout>
+</RelativeLayout>
